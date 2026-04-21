@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import express, { Request, Response } from 'express';
-import puppeteer from 'puppeteer';
+import { launchBrowser } from './browser';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -13,7 +13,7 @@ app.get('/', (request: Request, response: Response) => {
 
 app.get('/pdf', async (request: Request, response: Response) => {
   try {
-    const browser = await puppeteer.launch();
+    const browser = await launchBrowser();
 
     const page = await browser.newPage();
 
