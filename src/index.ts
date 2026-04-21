@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import express, { Request, Response } from 'express';
-import { launchBrowser } from './browser';
+import { launchBrowser } from './browser.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
