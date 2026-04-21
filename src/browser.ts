@@ -1,7 +1,8 @@
 import puppeteer from 'puppeteer';
 
 export async function launchBrowser() {
-  return await puppeteer.launch({
+  return puppeteer.launch({
+    executablePath: '/usr/bin/chromium',
     headless: true,
     args: [
       '--no-sandbox',
