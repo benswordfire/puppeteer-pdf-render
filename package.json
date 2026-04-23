@@ -22,13 +22,13 @@
   "homepage": "https://github.com/benswordfire/puppeteer-pdf-render#readme",
   "dependencies": {
     "express": "^5.2.1",
-    "puppeteer": "^24.42.0",
-    "tsx": "^4.21.0",
-    "typescript": "^6.0.3"
+    "puppeteer": "^24.42.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "dotenv": "^17.4.2",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
   }
 }
