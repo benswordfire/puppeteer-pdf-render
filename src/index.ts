@@ -1,6 +1,5 @@
 import 'dotenv/config';
-import express from 'express';
-import type { Request, Response } from 'express';
+import express, { Request, Response } from 'express';
 import { launchBrowser } from './browser.js';
 
 const app = express();
